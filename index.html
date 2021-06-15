@@ -1,163 +1,152 @@
-<!--DESARROLLADO POR FERNANDO JUAREZ ALDORICA-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Desarrollo Web</title>
+	<title>Air Mexican</title>
+
+	<!--ESTILOS-->
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/lightbox.min.css"><!--Lightbox-->
+	<link rel="stylesheet" href="css/swiper.min.css"><!--Swipper-->
+
+	<!--FUENTES-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
 
 	<!--Descripcion-->
-	<meta name="descripcion" content="Hola… yo soy Fernando Juárez Aldorica, licenciado en Informática egresado de la FES-Cuautitlán con inclinación hacia el Desarrollo Web Front-End. Cuento con experiencia en diseño de Mockups y desarrollo de Landing Pages Responsivas. Juntos hagamos que tu marca o negocio llegue a más personas y planta bandera dentro del internet.">
+	<meta name="descripcion" content="curso de HTML Avanzado">
 
-	<!--Keyword-->
-	<meta name="keywords" content="desarrollo web, paginas web, landing page, marketing digital, javascript">
-
-	<!--Estilos-->
-	<link rel="stylesheet" type='text/css' href="css/estilos.css">
-	<link rel="stylesheet" type='text/css' href="css/styles.css"><!--ESTILOS RESPONSIVOS-->
-
-	<!--Animaciones-->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-	<!--Fuente-->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+	<!--Keywords-->
+	<meta name="keywords" content="curso, tutorial, web, html, html5">
 
 	<!--Favicon-->
 	<link rel="icon" href="icon.png" type="image/png" />
 
+	<!--Animaciones-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
+
 	<!--MENU DE NAVEGACION-->
 	<header id="header">
 		<nav class="menu">
-			<div class="logo">
-				<h1>
-					<a href="#">F.J. | Desarrollador Web</a>
-					<span class="btnMenu"><i class="fas fa-bars"></i></span>
-				</h1>
-			</div>
+			<h1>
+				<a href="#">Air Mexican</a>
+			</h1>
 
-			<div class="contenedorMenu">
-				<ul class="lista">
-					<li>
-						<a href="#about" rel="nofollow">Conóceme</a>
-					</li>
-					<li>
-						<a href="#proyectos" rel="nofollow">Proyectos</a>
-					</li>
-					<li>
-						<a href="#apps" rel="nofollow">Aplicaciones</a>
-					</li>
+			<span class="btnMenu">
+				<i class="fas fa-bars"></i>
+			</span>
+
+			<div class="menuLista">
+				<ul>
+					<li><a href="#hombre">Tenis para Hombre</a></li>
+					<li><a href="#mujer">Tenis para Mujer</a></li>
+					<li><a href="#about">Conócenos</a></li>
 				</ul>
 			</div>
 		</nav>
 
-		<!--IMG HEADER-->
-		<div class="imgHeader">
-			<!--DIV FORZOSO PARA CARGAR LAS PARTICULAS-->
-			<div id="particles-js"></div>
-			<div class="welcome">
-				<h1>Fernando Juárez</h1>
-				<hr>
-				<p>Desarrollador Web</p>
-			</div>
-		</div>
-		<div class="diagonalAbajo" id=''></div>
+		<!-- Swiper -->
+	  	<div class="swiper-container">
+
+	        <div class="swiper-wrapper">
+	          <div class="swiper-slide"><img src="images/hombre/01.jpg" alt=""></div>
+	          <div class="swiper-slide"><img src="images/hombre/02.jpg" alt=""></div>
+	          <div class="swiper-slide"><img src="images/mujer/01.jpg" alt=""></div>
+	          <div class="swiper-slide"><img src="images/mujer/02.jpg" alt=""></div>
+	        </div>
+	    </div>
 	</header>
 
-	<main id='main'>
+	<main id="main">
+		<!--SECCION HOMBRES-->
+		<section class="hombre" id="hombre">
+			<div class="hombreContenedor">
+				<div class="hombreTitulo">
+					<h2>Tenis para Hombres</h2>
+				</div>
+
+				<!--GALERIA CON LIGHTBOX-->
+				<div class="hombreCat" data-aos="fade-up" data-aos-duration="1000">
+					<div class="galeriaCard">
+			         	<a href="images/hombre/01.jpg" data-lightbox="roadtrip"><img src="images/hombre/01.jpg" alt=""></a>
+		          	</div>
+		          	<div class="galeriaCard">
+			         	<a href="images/hombre/02.jpg" data-lightbox="roadtrip"><img src="images/hombre/02.jpg" alt=""></a>
+		          	</div>
+		          	<div class="galeriaCard">
+			         	<a href="images/hombre/03.jpg" data-lightbox="roadtrip"><img src="images/hombre/03.jpg" alt=""></a>
+		          	</div>
+				</div>
+			</div>
+		</section>
+
+		<!--SECCION MUJERES-->
+		<section class="mujer" id="mujer">
+			<div class="mujerContenedor">
+				<div class="mujerTitulo">
+					<h2>Tenis para Mujer</h2>
+				</div>
+
+				<!--GALERIA CON LIGHTBOX-->
+				<div class="mujerCat" data-aos="fade-up" data-aos-duration="1000">
+					<div class="galeriaCard">
+			         	<a href="images/mujer/01.jpg" data-lightbox="roadtrip"><img src="images/mujer/01.jpg" alt=""></a>
+		          	</div>
+		          	<div class="galeriaCard">
+			         	<a href="images/mujer/02.jpg" data-lightbox="roadtrip"><img src="images/mujer/02.jpg" alt=""></a>
+		          	</div>
+		          	<div class="galeriaCard">
+			         	<a href="images/mujer/03.jpg" data-lightbox="roadtrip"><img src="images/mujer/03.jpg" alt=""></a>
+		          	</div>
+				</div>
+			</div>
+		</section>
 
 		<!--ABOUT-->
-		<section class="about" id='about'>
-			<div class="infoAbout">
-				<div class="tituloAbout">
-					<h2>Conociendo al Desarrollador</h2>
+		<section class="about" id="about">
+			<figure class="aboutImg">
+				<div class="aboutContenedor" data-aos="zoom-in" data-aos-duration="1000">
+					<div class="aboutTitulo">
+						<h2>Conócenos</h2>
+					</div>
+
+					<p>Somos una marca de calzado de moda joven que propone un estilo único en todo momento.</p>
+					<br><br>
+					<p>Nos gusta divertirnos, crear y detonar colores en cada material o textura; buscamos ser compatibles con el estilo de vida de la juventud actual de hombres y mujeres, pero sobre todo, creamos productos de moda a un muy buen precio.</p>
+					<br><br>
+					<p>Nuestra misión es diseñar, desarrollar y comercializar calzado de moda joven, satisfaciendo al mercado con imagen, calidad, servicio y precio siendo la primera y mejor opción de calzado de moda joven para los hombres y mujeres de todo México.</p>
 				</div>
-				<p data-aos="fade-down" data-aos-duration="1000">
-					Hola… yo soy <b>Fernando Juárez Aldorica</b>, licenciado en Informática egresado de la <b>FES-Cuautitlán</b> con inclinación hacia el <b>Desarrollo Web Front-End.</b> Cuento con experiencia en diseño de <b>Mockups</b> y desarrollo de <b>Landing Pages Responsivas</b>.
-					<br><br>
-					Juntos hagamos que tu <b>marca</b> o <b>negocio</b> llegue a más personas y planta bandera dentro del <b>internet.</b>
-					<br><br>
-					Para esto ofrezco <b>Diseños Web Escalables y Adaptativos</b> lo que significa que tu Web podrá ser visible tanto en <b>Teléfonos Móviles</b> como en <b>Tablets.</b> . A la par de esto todas las <b>Páginas Web</b> o <b>Landing Pages</b> que desarrolle para ti estarán optimizadas en <b>SEO</b> y <b>Marketing Digital</b> con el objetivo de captar más clientes para tu negocio.
-					<br><br>
-					<b>!No lo dudes y contactame¡</b>
-				</p>
-				<!--<p><a href="portafolios.html">Portafolios</a></p>-->
-			</div>
-
-			<div class="imgAbout" data-aos="fade-up" data-aos-duration="1000">
-				<img id='aboutImg' onclick='mail()' onmouseover="cambioAbout()" onmouseout="regresoAbout()" src="img/about.jpg" alt="Contacto">
-				<img id='aboutImg02' onclick='mail()' onmouseover="cambioAbout()" onmouseout="regresoAbout()" src="img/about-01.jpg" alt="Contacto">
-			</div>
-		</section>
-
-		<!--FRASE-->
-		<section class="frase">
-			<div class="diagonalArribaNegro" id=''></div>
-			<figure class="fraseImg" id='frase'>
-				<h3 data-aos="zoom-in" data-aos-duration="1000">"El Profeta del futuro, es sin duda alguna el Pasado"</h3>
-				<p data-aos="zoom-in" data-aos-duration="1000">- Lord Byron -</p>
 			</figure>
-			<div class="diagonalAbajo" id=''></div>
-		</section>
-
-		<!--PROYECTOS-->
-		<section class="proyectos" id='proyectos'>
-			<div class="contenedorProyectos">
-				<div class="tituloProyectos">
-					<h2>Proyectos</h2>
-				</div>
-
-				<div class="proyectosIMG" data-aos="fade-up" data-aos-duration="1000">
-					<img id='tenis' onclick='link05()' onmouseover="cambio05()" onmouseout="regreso05()" src="img/proyectos/05.jpg" alt="Tienda de Tenis">
-					<img id='hoc' onclick='link01()' onmouseover="cambio01()" onmouseout="regreso01()" src="img/proyectos/01.jpg" alt="Tienda en Línea">
-					<img id='aj' onclick='link02()' onmouseover="cambio02()" onmouseout="regreso02()" src="img/proyectos/02.jpg" alt="Artista Gráfica">
-					<img id='pan' onclick='link03()' onmouseover="cambio03()" onmouseout="regreso03()" src="img/proyectos/03.jpg" alt="Panaderia y Reposteria">
-					<img id='auto' onclick='link04()' onmouseover="cambio04()" onmouseout="regreso04()" src="img/proyectos/04.jpg" alt="Agencia de Autos">
-					<!--<img onclick='link00()' src="img/proyectos/00.jpg" alt="Próximamente">-->
-				</div>
-			</div>
-		</section>
-
-		<!--APLICACIONES-->
-		<section class="apps" id="apps">
-			<div class="diagonalArriba" id=''></div>
-			<div class="appsContenedor">
-				<div class="appsTitulo">
-					<h2>Aplicaciones</h2>
-				</div>
-
-				<div class="appsImg" data-aos="fade-up" data-aos-duration="1000">
-					<img id='lightbox' onclick='app01()' onmouseover="appCambio01()" onmouseout="appRegreso01()" src="img/apps/01.jpg" alt="Galería de Fotos con Lightbox JS">
-					<img id='swiper' onclick='app02()' onmouseover="appCambio02()" onmouseout="appRegreso02()" src="img/apps/02.jpg" alt="Slideshow con Swiper">
-					<img id='menuAnimado' onclick='app03()' onmouseover="appCambio03()" onmouseout="appRegreso03()" src="img/apps/03.jpg" alt="Menú Animado">
-				</div>
-			</div>
 		</section>
 	</main>
 
-	<!--FOOTER-->
-	<footer class="footer">
-		<p>&copy; Fernando Juárez | Desarrollador Web | Derechos Reservados 2021</p>
-	</footer>
-
 	<!--HOME-->
 	<div class="home">
-		<i class="far fa-hand-point-up"></i>
+		<span class="fas fa-level-up-alt"></span>
 	</div>
 
+	<!--FOOTER-->
+	<footer class="footer">
+		<p>&copy; Derechos Reservados 2021 | Air Mexican</p>
+	</footer>
+	
 
 
-	<!--SCRIPTS-->
-	<script src="https://kit.fontawesome.com/15876357fa.js" crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
-	<script src="js/funciones.js"></script>
-	<script src="js/particles.js"></script>
-	<script src="js/particles-lib.js"></script>
-	<!--Animaciones-->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>AOS.init();</script>
+
+
+<!--Script-->
+<script src="js/swiper.min.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script><!--Lightbox-->
+<script src="js/lightbox.min.js"></script><!--Lightbox-->
+<script src="https://kit.fontawesome.com/15876357fa.js" crossorigin="anonymous"></script>
+<script src="js/home.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/main.js"></script>
+<!--Animaciones-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>
