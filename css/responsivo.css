@@ -42,4 +42,19 @@
 	.mujer .mujerContenedor .mujerTitulo{
 		width: 80%;
 	}
+	.mujer .mujerContenedor .mujerTitulo h2{
+		font-size: 50px;
+	}
+	.about .aboutImg .aboutTitulo h2{
+		font-size: 50px;
+	}
+	.about .aboutImg p{
+		font-size: 35px;
+	}
+	.about .aboutImg .aboutContenedor{
+		width: 80%;
+	}
+	.footer p{
+		font-size: 20px;
+	}
 }
