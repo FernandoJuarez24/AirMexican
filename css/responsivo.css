@@ -1,0 +1,45 @@
+:root{
+	/*flauicolors - Brithishlette*/
+	--negro:#2f3640;
+	--negro2: #353b48;
+	--blanco: #dcdde1;
+	--gris: #718093;
+}
+
+@media only screen and (max-width: 800px){
+	.swiper-container{
+		height: 600px;
+	}
+	.hombreCat{
+		grid-template-columns: none;
+		padding: 100px;
+	}
+	.mujerCat{
+		grid-template-columns: none;
+		padding: 100px;
+	}
+	.about .aboutImg .aboutContenedor{
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 550px){
+	.swiper-container{
+		display: none;
+	}
+	.hombre .hombreContenedor .hombreTitulo h2{
+		font-size: 50px;
+	}
+	.hombre .hombreContenedor .hombreTitulo{
+		width: 80%;
+	}
+	.hombreCat{
+		padding: 100px 40px;
+	}
+	.mujerCat{
+		padding: 100px 40px;
+	}
+	.mujer .mujerContenedor .mujerTitulo{
+		width: 80%;
+	}
+}
