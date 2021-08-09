@@ -57,4 +57,19 @@
 	.footer p{
 		font-size: 20px;
 	}
+	.lightbox{
+		top: 300px;
+	}
+	.contacto .contactoContenedor .contactoTitulo h2{
+		font-size: 50px;
+	}
+	.contacto .contactoContenedor .formularioContenedor{
+		width: 100%;
+	}
+	.menu h1 > a{
+		margin-left: 30px;
+	}
+	.menu .btnMenu{
+		margin-right: 30px;
+	}
 }
